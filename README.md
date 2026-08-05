@@ -1,6 +1,8 @@
-# robot_drive
+# drive
 
-Drive-only control: **MQTT → host bridge → UART → MCU**.
+Locomotion module for Puppet: **MQTT → host bridge → UART → MCU**.
+
+Stack overview: [architecture](https://github.com/smart-puppet/docs/blob/main/architecture.md). MQTT topics: [mqtt](https://github.com/smart-puppet/docs/blob/main/mqtt.md).
 
 Command FIFO and functional safety live in **firmware**. The host only translates MQTT and refreshes the motion watchdog over UART.
 
